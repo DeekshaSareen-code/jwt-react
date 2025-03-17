@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home";
 import SafeHouse from "./components/Jwt-safehouse";
 function App() {
+  useEffect(() => {
+    if (window.location.pathname !== "/") {
+      window.location.href = "/";
+    }
+  }, []);
   const appRouter = createBrowserRouter([
     { path: "/", element: <Home /> },
     {
