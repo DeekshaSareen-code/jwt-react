@@ -37,3 +37,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### Future Enhancements
 
 - Implement refresh token to generate a new access-token once the access-token expires.
+- Implement password hashing and store in cookies
